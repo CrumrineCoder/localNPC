@@ -32,13 +32,14 @@ var flash = require('connect-flash');
 // Password and username authentication.
 var LocalStrategy = require('passport-local').Strategy;
 
-var mLab = 'mongodb://' + process.env.HOST + '/' + process.env.NAME;
-
+var mLab = 'mongodb://' + process.env.HOST + '/' + process.env.NAME + "?authMode=scram-sha1";
+console.log("Mlab: " + mLab);
 // Connect to the database with Mongoose
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://' + process.env.HOST + '/' + process.env.NAME, {
+mongoose.connect('mongodb://' + process.env.HOST + '/' + process.env.NAME + "?authMode=scram-sha1", {
 
 });
+
 var db = mongoose.connection;
 
 var users = require('./app/routes/users.js');

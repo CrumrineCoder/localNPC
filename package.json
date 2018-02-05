@@ -1,12 +1,52 @@
+
+
 {
-  "name": "localnpc",
+   "name": "npc-lookup",
   "version": "1.0.0",
-  "description": "",
+  "description": "A website for sharing NPCs",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
-  "author": "Nic",
-  "license": "MIT"
+   "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CrumrineCoder/NPC-LOOK-UP.git"
+  },
+  "keywords": [
+    "MEAN",
+    "MongoDB",
+    "Express",
+    "Node",
+    "javascript",
+    "boilerplate"
+  ],
+  "author": "Nicolas Crumrine",
+  "license": "MIT",
+  "dependencies": {
+    "angular": "*",
+    "body-parser": "^1.18.2",
+    "chart.js": "^2.7.1",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.16.2",
+    "jsonwebtoken": "^8.1.0",
+    "mongodb": "^2.2.33",
+    "mongoose": "^4.13.4",
+    "morgan": "^1.9.0",
+    "mongoose-auto-increment": "^5.0.1",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "serve-favicon": "^2.4.5",
+    "bcryptjs": "^2.4.3",
+    "connect-flash": "^0.1.1",
+    "express-handlebars": "^3.0.0",
+    "express-messages": "^1.0.1",
+    "express-session": "^1.15.6",
+    "express-validator": "^4.3.0",
+    "passport-http": "^0.3.0",
+    "passport-remember-me": "^0.0.1"
+  },
+    "bugs": {
+    "url": "https://github.com/CrumrineCoder/NPC-LOOK-UP/issues"
+  },
+   "homepage": "https://github.com/CrumrineCoder/NPC-LOOK-UP#readme"
 }

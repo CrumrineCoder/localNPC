@@ -1,6 +1,7 @@
+console.log(process.cwd());
 var NPCHandler = require(process.cwd() + '/app/controllers/NPCHandler.server.js');
 'use strict';
-
+console.log("index.js");
 module.exports = function (app, db) {
    var npcHandler = new NPCHandler(db);
 

@@ -1,4 +1,5 @@
 'use strict';
+console.log("profile.client.js");
 (function() {
     var app = angular.module('npc', []);
     	// Because handlebar uses {{}}, we have to use {[{}]}

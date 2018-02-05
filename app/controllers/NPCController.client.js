@@ -1,5 +1,6 @@
 'use strict';
 console.log(window.location.href);
+console.log("NPCControllers.client.js");
 (function() {
     // Set up Angular
     var app = angular.module('npc', []);
@@ -13,10 +14,11 @@ console.log(window.location.href);
         $scope.search = "";
         // NPCs to show to the user angular var
         $scope.NPCs = [];
-        var apiUrl = 'https://npclookup.glitch.me/';
+        var apiUrl = 'http://localhost:3000/';
         var user;
         // Get the current user  logged in 
         function getUser(callback) {
+			console.log(apiUrl + "users/user_data");
             ajaxRequest('GET', apiUrl + "users/user_data", function(data) {
                 data = JSON.parse(data);
                 if (data.hasOwnProperty('username')) {

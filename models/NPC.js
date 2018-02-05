@@ -1,12 +1,14 @@
 // This file handles the backend for the NPC mongoose schema
+console.log("NPC.js");
 var mongoose = require('mongoose');
 //mongoose.set('debug', true);
 var bcrypt = require('bcryptjs');
-mongoose.connect('mongodb://' + process.env.HOST + '/' + process.env.NAME, {
+mongoose.connect('mongodb://' + process.env.HOST + '/' + process.env.NAME + "?authMode=scram-sha1", {
 });
 
 var db = mongoose.connection;
 var npc = db.collection('npcs');
+console.log(db.version());
 var NPCSchema = mongoose.Schema({
     Name: {
         type: String,
@@ -17,12 +19,14 @@ var NPCSchema = mongoose.Schema({
 });
 var ObjectId = require('mongodb').ObjectID;
 
+/*
 NPCSchema.index({
     "$**": "text"
 });
 npc.createIndex({
     "$**": "text"
 });
+*/
 
 // The below line is causing problems. It may not be needed.
 // var NPC = module.exports = mongoose.model('NPC', NPCSchema);

@@ -1,4 +1,5 @@
 (function() {
+	console.log("getSpecificNPC.client.js");
     var path = window.location.pathname;
     var page = path.split("/").pop();
     var angularApp = angular.module('npc', []);

@@ -1,4 +1,5 @@
 var express = require('express');
+console.log("NPCs.js");
 var router = express.Router();
 var ObjectId = require('mongodb').ObjectID;
 // This file handles routing relation to making and viewing polls
@@ -6,7 +7,7 @@ var ObjectId = require('mongodb').ObjectID;
 //var LocalStrategy = require('passport-local').Strategy;
 var NPC = require(process.cwd() + '/models/NPC');
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://' + process.env.HOST + '/' + process.env.NAME, {
+mongoose.connect('mongodb://' + process.env.HOST + '/' + process.env.NAME + "?authMode=scram-sha1", {
 });
 var db = mongoose.connection;
 var npcs = db.collection('npcs');

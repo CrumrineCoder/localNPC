@@ -1,6 +1,6 @@
 
 // This file handles the backend for the user mongoose schem and functions
-
+console.log("user.js");
 var mongoose = require('mongoose');
 var bcrypt = require('bcryptjs');
 

@@ -1,4 +1,4 @@
-
+console.log("ajaxRequest.js");
 // Run a function on page load
 function ready(fn) {
     // Will do the function once the document is ready
@@ -20,5 +20,8 @@ function ajaxRequest(method, url, callback) {
         }
     };
     xmlhttp.open(method, url, true);
+	console.log(method);
+	console.log(url);
+	console.log(callback);
     xmlhttp.send();
 }
