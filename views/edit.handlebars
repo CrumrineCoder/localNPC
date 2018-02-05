@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<html>
+   <head>
+
+   </head>
+   <body ng-app="npc" ng-controller="npcController">
+
+      <form method="post" action="/NPC/edit"  name="npcCreationForm" id="createNPCFORM">
+  
+       
+        <input type="text" value={[{NPC.username}]} name="username" readonly="readonly" class="hidden" />
+        
+         <label for="Name">[Will be displayed on NPC listing] Enter the Character's Name:</label>
+        <input id="Name" type="text" value={[{NPC.Name}]} name="Name"/>
+         <h3>
+            Physical Description
+         </h3>
+         <label for="Gender">[Will be displayed on NPC listing] Enter the Character's Gender:</label>
+         <input id="Gender"  type="text" name="Gender" value={[{NPC.Gender}]} list="GenderList">
+         <datalist id="GenderList"></datalist>
+         <br>
+         <label for="Race">[Will be displayed on NPC listing] Enter the Character's Race (human, elf, dwarf, etc.):</label>
+         <input id="Race" type="text" name="Race" value={[{NPC.Race}]}  list="RaceList">
+          <datalist id="RaceList"></datalist>
+         <br>
+         <label for="Profession">[Will be displayed on NPC listing] Enter the Character's Profession or Class:</label>
+         <input id="Profession" type="text" name="Profession" value={[{NPC.Profession}]}  list="ProfessionList">
+         <datalist id="ProfessionList"></datalist>
+         <br>
+         <label for="Age" >[Will be displayed on NPC listing] Enter the Character's Age:</label>
+         <input id="Age" type="text" name="Age" value={[{NPC.Age}]}  list="AgeList"> 
+        <datalist id="AgeList"></datalist>
+         <br>
+         <br>
+         <label for="PDesc">Enter the Character's Physical Description:</label>
+         <textarea onkeyup="auto_grow(this)" id="PDesc" type="text" name="PDesc" >{[{NPC.PDesc}]}</textarea>
+         <br>
+         <h3>
+            Mental Description and Plot Hooks
+         </h3>
+         <label for="Location">[Will be displayed on NPC listing] Enter the Character's working location and activity:</label>
+         <input id="Location" type="text" name="Location" value={[{NPC.Location}]}  list="LocationList">
+         <datalist id="LocationList"></datalist>
+         <br>
+        <label for="Downtime"> Enter the Character's downtime location and activity:</label>
+         <input id="Downtime" type="text" name="Downtime" value={[{NPC.Downtime}]} >
+         <br>
+         <label for="Drive">Enter the Character's Drives:</label>
+         <textarea onkeyup="auto_grow(this)" id="Drive" type="text" name="Drive" placeholder="The Drives of a character are the character's goals, fears, core beliefs, and what they value.">{[{NPC.Drive}]}</textarea>
+         <br>
+         <label for="Hook">Enter potential plot hooks:</label>
+         <textarea onkeyup="auto_grow(this)" id="Hook" type="text" name="Hook">{[{NPC.Hook}]} </textarea>
+         <br>
+         <label for="Backstory">Enter the Character's Backstory:</label>
+         <textarea onkeyup="auto_grow(this)" id="Backstory" type="text" name="Backstory" >{[{NPC.Backstory}]}</textarea>
+         <br>
+         <h3>
+            Personality
+         </h3>
+         <label for="persBrief">[Will be displayed on NPC listing] Enter the Character's Personality IN ONE WORD:</label>
+         <input  maxlength="20" id="persBrief" type="text" name="persBrief" value={[{NPC.persBrief}]} >
+         <br>
+         <label for="Personality">Enter the Character's Personality:</label>
+         <textarea onkeyup="auto_grow(this)" id="Personality" type="text" name="Personality">{[{NPC.Personality}]} </textarea>
+         <br>
+         <label for="Speech">Enter the Character's Speech Patterns, Mannerisms, quotes & sayings:</label>
+         <textarea onkeyup="auto_grow(this)" id="Speech" type="text" name="Speech" >{[{NPC.Speech}]}</textarea>
+         <br>
+         <h3>
+            Affiliations
+         </h3>
+         <label for="NPCs">Enter other NPCs the Character knows and their relationship:</label>
+         <textarea onkeyup="auto_grow(this)"  id="NPCs" type="text" name="NPCs" >{[{NPC.NPCs}]}</textarea>
+         <br>
+         <label for="FactionType">[Will be displayed on NPC listing] Enter the Character's Faction Type</label>
+         <input  maxlength="30" id="FactionType" type="text" name="FactionType" value={[{NPC.FactionType}]}  list="FactionList">
+         <datalist id="FactionList"></datalist>
+         <br>
+         <label for="FactionDesc">Enter the Character's Faction Description:</label>
+         <textarea id="FactionDesc" type="text" name="FactionDesc"  >{[{NPC.FactionDesc}]}</textarea>
+         <br>
+         <h3>
+            Mechanics
+         </h3>
+         <label for="Stats">Enter the Character's Notable Stats:</label>
+         <textarea onkeyup="auto_grow(this)"  id="Stats" type="text" name="Stats" > {[{NPC.Stats}]}</textarea>
+         <br>
+         <label for="Items">Enter the Character's Notable Items:</label>
+         <textarea onkeyup="auto_grow(this)"  id="Items" type="text" name="Items"  >{[{NPC.Items}]}</textarea>
+         <br>
+         <h3>
+           Other
+        </h3>
+        <label for="Other">Enter other notes that don't fit in any other category:</label>
+         <textarea onkeyup="auto_grow(this)"  id="Other" type="text" name="Other" >{[{NPC.Other}]} </textarea>   
+        <input type="hidden" name="comments" value= {[{NPC.comments}]}></input>
+
+<div id="submitButtons">
+  
+    
+         <button type="submit"  style="margin-top: 10px;" value="Send order" id="greenButton">Save Changes</button>
+     </form>
+
+     <form method="post" action="/NPC/delete">
+       <input type="hidden" name="_id" value={[{NPC._id}]}>
+        <button type="submit" class="confirmation" id="delete">
+        Delete
+  </button>
+     </form>
+      </div>
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+      <script type="text/javascript" src=" https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+       <script type="text/javascript" src="/controllers/ajaxRequest.js"></script>  
+      <script type="text/javascript" src="/controllers/editNPC.client.js"></script>
+
+   </body>
+</html>

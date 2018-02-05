@@ -1,0 +1,186 @@
+body{
+  background: #DED9B2;
+  margin: 0; 
+}
+
+textarea {
+    resize: none;
+    overflow: hidden;
+    min-height: 50px;
+    max-height: 100px;
+  width: 100%; 
+}
+
+.hidden{display: none;}
+
+#createNPCFORM input, #createNPCFORM textarea{display: block; width: 100%;}
+
+/* Nav */
+
+nav{
+  background: lemonchiffon;
+  margin-bottom: 3px;
+}
+h2{
+  padding: 5px; 
+  margin: 0; 
+}
+nav .navLink a{
+color: #666560;
+}
+nav .navLink a:hover {
+  background: #ADAA8B;
+  color: white;
+     
+}
+
+
+/* NPC Listing */
+
+table {
+  border-collapse: collapse;
+  width: 100%; 
+  font-weight: normal; 
+}
+
+td, th {
+  border: 1px solid #999;
+  padding: 0.5rem;
+  text-align: left;
+
+}
+
+hr{
+  border-top: 1px solid #CAD2B9;
+}
+
+
+.NPCContainer{
+  border: 1px solid black; 
+  padding: 5px;
+  margin: 5px 0px; 
+  background: white; 
+}
+
+ #npcName{
+    width: 30%; 
+  }
+
+.searchButton{
+  color: black; 
+  background: white;
+  border: 1px solid grey; 
+  width: 40px; 
+  height: 25px;
+  padding: 1px; 
+  
+}
+
+.searchButton:hover{
+  background: #A8A587;
+  color: white; 
+}
+
+/* Individual NPC pages */
+
+.bold{
+  font-weight: bold; 
+}
+
+.section{
+  margin: 0 auto; 
+  background: white; 
+  border: 1px solid black; 
+  padding: 5px; 
+}
+
+
+/* Delete */
+.inline {
+  display: inline;
+}
+
+/* Edit NPC pages */
+
+#greenButton{
+  background: #41AB3E;
+}
+
+#greenButton:hover{
+  background: #0F4F0C;
+}
+
+#delete{
+  background: #AB1B1B;
+}
+
+#delete:hover{
+  background: #4F0C0C;
+}
+
+#greenButton, #delete{
+  color: white; 
+  border: none; 
+  text-align: center; 
+  padding: 5px; 
+  font-size: 16px; 
+}
+
+#submitButtons *{
+  display: inline; 
+  text-align: center; 
+}
+
+/* Comments */
+
+.displayName{
+  font-weight: bold; 
+  font-size: 14px; 
+}
+
+.date{
+  color: #424540;
+  font-size: 12px; 
+}
+
+
+/* Media Queries */
+@media only screen and (max-width: 700px) {
+  #npcName{
+    width: 75%; 
+    font-size: 18px;
+  }
+  .searchButton{
+    width: 24%;
+    height: 32px;
+    border-radius: 1px; 
+  }
+  #tip{
+    display: block; 
+  }
+  #greenButton, #delete{
+    width: 100%;
+  }
+  #labelNPCname{
+    display: block;
+  }
+}
+
+
+@media only screen and (max-width: 500px) {
+.searchButton{
+    width: 100%;
+  }
+  #npcName{
+  width: 100%;
+  }
+  h2{
+    width: 100%;
+  }
+  ul{
+    display: block;
+  }
+    .pull-right{
+    font-size: 13px;
+  }
+}

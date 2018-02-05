@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Voting App</title>
+      <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet" type="text/css">
+      <link href="/public/css/main.css" rel="stylesheet" type="text/css">
+   </head>
+   <body ng-app="npc" ng-controller="npcController">
+      <div class="section">
+         <h3> {[{NPC.Name}]} </h3>
+         <span class="bold">Hooks:</span>
+         <p>{[{NPC.Hook}]} </p>
+         <span class="bold">Drives:</span>
+         <p> {[{NPC.Drive}]} </p>
+         <span class="bold">Physical Description:</span>
+         <p> {[{NPC.PDesc}]} </p>
+         <span class="bold">Backstory:</span>
+         <p> {[{NPC.Backstory}]} </p>
+         <span class="bold">Personality:</span>
+         <p> {[{NPC.Personality}]} </p>
+         <span class="bold">Speech Patterns:</span>
+         <p>{[{NPC.Speech}]} </p>
+         <table class="PhysicalDescription">
+            <tr>
+               <th>Profession</th>
+               <th>Age</th>
+               <th>Gender</th>
+               <th>Race</th>
+            </tr>
+            <tr>
+               <td>{[{NPC.Profession}]}</td>
+               <td>{[{NPC.Age}]}</td>
+               <td>{[{NPC.Gender}]}</td>
+               <td> {[{NPC.Race}]}</td>
+            </tr>
+         </table>
+         <table>
+            <tr>
+               <th> Working location and activity </th>
+               <th> Downtime location and activity </th>
+            </tr>
+            <tr>
+               <td> {[{NPC.Location}]} </td>
+               <td> {[{NPC.Downtime}]} </td>
+            </tr>
+         </table>
+         <table>
+            <tr>
+               <th> Affiliated NPCs </th>
+               <th> Affiliated Faction </th>
+            </tr>
+            <tr>
+               <td> {[{NPC.NPCs}]} </td>
+               <td>
+                  <p class="bold"> {[{NPC.FactionType}]} </p>
+                  {[{NPC.FactionDesc}]} 
+               </td>
+            </tr>
+         </table>
+         <table>
+            <tr>
+               <th> Stats </th>
+               <th> Items </th>
+            </tr>
+            <tr>
+               <td> {[{NPC.Stats}]} </td>
+               <td> {[{NPC.Items}]} </td>
+            </tr>
+         </table>
+         <br /> <span class="bold">Misc Notes:</span>
+         <p>{[{NPC.Other}]} </p>
+         <h3>
+            {[{comments.length}]} thoughts on {[{NPC.Name}]}
+         </h3>
+         <div ng-repeat="comment in comments">
+            <div class="displayName">
+               {[{comment.displayName}]}
+            </div>
+            <div class="date">
+               {[{ comment.date | date:'MM/dd/yyyy @ h:mma'}]}
+            </div>
+            <p class="comment">
+               {[{comment.comment}]}
+            </p>
+         </div>
+      </div>
+       <H3>
+          Leave a Reply
+       </H3>
+       <form action="/NPC/comment" method="post" id="commentform">
+          <label for="comment" class="required">Your message</label>
+          <textarea name="comment" id="comment" rows="10" tabindex="4"  required="required"></textarea>
+          <input type="hidden" name="npcID" value={[{NPC._id}]} id="npcID" />
+          <input name="submit" type="submit" value="Submit comment" id="greenButton"/>
+       </form>
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+      <script type="text/javascript" src=" https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script type="text/javascript" src="/controllers/ajaxRequest.js"></script>
+      <script type="text/javascript" src="/controllers/getSpecificNPC.client.js"></script>
+   </body>
+</html>

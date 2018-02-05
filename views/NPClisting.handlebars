@@ -1,0 +1,57 @@
+<html>
+
+<head>
+    <title>NPC App</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body ng-app="npc" ng-controller="npcController">
+    <form> <label for="npcName">Search by name: </label> <input id="npcName" type="text" name="npcName" ng-model="search" placeholder="NPC Name"> <button class="searchButton" ng-click="load()">
+      <i class="fa fa-search"></i>
+  </button> <span id="tip">Click the NPC's Name to see more details or comment!</span></form> 
+        <div ng-repeat="NPC in NPCs" class="NPCContainer">
+            <div id="{[{NPC._id}]}">
+                <a ng-href="NPC/view/{[{NPC._id}]}">
+                    <h3> {[{NPC.Name}]} </h3>
+                </a>
+            </div> <span class="bold">Hooks:</span>
+            <p>{[{NPC.Hook}]} </p> <span class="bold">Drives:</span>
+            <p> {[{NPC.Drive}]} </p>
+            <hr align="middle" width="50%">
+            <table class="PhysicalDescription">
+                <tr>
+                    <th>Profession</th>
+                    <th>Age</th>
+                    <th>Gender</th>
+                    <th>Race</th>
+                </tr>
+                <tr>
+                    <td>{[{NPC.Profession}]}</td>
+                    <td>{[{NPC.Age}]}</td>
+                    <td>{[{NPC.Gender}]}</td>
+                    <td> {[{NPC.Race}]}</td>
+                </tr>
+            </table>
+            <hr align="middle" width="50%">
+            <table class="MentalDescription">
+                <tr>
+                    <th>Brief Personality</th>
+                    <th>Work Location and Activity</th>
+                    <th>Type of Faction</th>
+                </tr>
+                <tr>
+                    <td>{[{NPC.persBrief}]}</td>
+                    <td>{[{NPC.Location}]}</td>
+                    <td>{[{NPC.FactionType}]}</td>
+                </tr>
+            </table>
+        </div>
+      
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script type="text/javascript" src=" https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="/controllers/ajaxRequest.js"></script>
+    <script type="text/javascript" src="/controllers/NPCController.client.js"></script>
+</body>
+
+</html>
