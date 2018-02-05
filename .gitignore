@@ -1,0 +1,167 @@
+{
+    "_id": {
+        "$oid": "5a74bc6236b67b00837b6143"
+    },
+    "Name": "Sir Nick Cage",
+    "Gender": "Gorgeous l",
+    "Race": "Assamir",
+    "Profession": "Bard",
+    "Age": "54",
+    "PDesc": "A sculpted face derived by the mutual work of all the Gods, created on the body of the ideal warrior. Dark hair frames his brow, emphasizing his piercing eyes.",
+    "Location": "Hollywood, Orator",
+    "Downtime": "Seeking Artifacts",
+    "Drive": "Finding a historically significant parchment",
+    "Hook": "Is not aware of his godlike heritage",
+    "Backstory": "A mortal who should be a God",
+    "persBrief": "Sexy",
+    "Personality": "",
+    "Speech": "",
+    "NPCs": "",
+    "FactionType": "Masons",
+    "FactionDesc": "",
+    "Stats": "Prof. in History",
+    "Items": "",
+    "Other": "",
+    "username": "Guest",
+    "comments": [
+        {
+            "displayName": "Nic",
+            "username": "Nic",
+            "comment": "I think this is really the only NPC you need for your campaign. You may not like it, but this is what peak NPC looks like.",
+            "commentID": "2094de76-2609-1e27-3997-464cb896c8a5",
+            "date": 1517604423716
+        }
+    ],
+    "__v": 0
+}
+
+
+{
+    "_id": {
+        "$oid": "5a21cb70487132206e823cc9"
+    },
+    "username": "Taming",
+    "Name": "Gandalf the Grey",
+    "Gender": "Male",
+    "Race": "Istari",
+    "Profession": "Wizard",
+    "Age": "2019",
+    "PDesc": "He wore a tall pointed grey hat, a long grey cloak, and a silver scarf. He had a long white beard and bushy eyebrows that stuck out beyond the brim of his hat.",
+    "Location": "Gandalf is wandering in Elf Territory learning from them",
+    "Downtime": "Selling fireworks to Minors in the Shire",
+    "Drive": "Gandalf is here to defend the people of Middle Earth no matter the cost. He sees morality in black and white and does not allow himself to be a bystander to Evil. ",
+    "Hook": "Gandalf is looking for adventurers to journey with him to kill Smaug.     ",
+    "Backstory": "Gandalf was one of the five Istari sent to Middle-earth by the Valar in the Third Age. In Valinor he was known as Olórin. ",
+    "persBrief": "Quick-tempered",
+    "Personality": "Keen observers of Gandalf often detected a veiled power, usually revealed in his eyes, which appeared deep and wise. He was alternately affectionate and brusque; he often surprised others with his bluntness when time was of the essence. Gandalf consistently upbraided foolish behavior, but also richly rewarded those who acted with good intentions.      ",
+    "Speech": "Gandalf speaks bluntly and does not mince his words, but yet often manages to speak poetically simply because of how much he's seen in his time. 'I will not say: do not weep; for not all tears are an evil'",
+    "NPCs": "Bilbo Baggins is a Hobbit friend of Gandalf who is travelling with him. ",
+    "FactionType": "Guardian Deities",
+    "FactionDesc": "The Wizards, initially known as the Istari, were five Maiar spirits sent to Middle-earth as human forms to aid the Free Peoples against the threat of Sauron.",
+    "Stats": " Gandalf is a fighter with 18 INT with high proficiency in Use Magic Device",
+    "Items": "Staff of Wizardry, Ring of Spell Storing.",
+    "Other": "The party loved him, but I had to remove him for some fights to avoid an issue where the NPC was clearly stronger than the party, which isn't the intent of my campaign. I had him save the party when they were captured by Trolls, but because they had built a friendship with him they didn't seem to mind that I did this.       ",
+    "comments": [
+        {
+            "displayName": "Anonymous",
+            "username": null,
+            "comment": "5th level spell caster in the Movies",
+            "commentID": "1104d216-6653-414d-8afa-1fe1f991edcb",
+            "date": 1516153115186
+        },
+        {
+            "displayName": "Anonymous",
+            "username": null,
+            "comment": "Testing",
+            "commentID": "32ee1434-dc7e-ff6b-d6d3-c1beaf56ef65",
+            "date": 1516484665693
+        }
+    ]
+}
+
+{
+    "_id": {
+        "$oid": "5a5eab3f97f298007ea76c1e"
+    },
+    "Name": "Wisp ",
+    "Gender": "Male",
+    "Race": "Human",
+    "Profession": "Retired Knight",
+    "Age": "40s or 50s",
+    "PDesc": "https://78.media.tumblr.com/0267fbdb4f2e70dcbb752af6eb7f5bce/tumblr_nv36vwD9U61s99l3wo3_1280.jpg",
+    "Location": "Wisp is retired so he doesn't work. ",
+    "Downtime": "Wisp spends time at the tavern trying to forget what he doesn't remember. He also spends time in the Feywild trying to make sense of it or in the  human world searching for connections to the Feywild.",
+    "Drive": "Wisp doesn't remember his family but if it's brought up he realizes he doesn't remember and becomes interested in finding his past. He doesn't realize at first that  he doesn't remember. He also wants to link the Feywilds and normal plane. He tries to rationalize the Feywilds. ",
+    "Hook": "Wisp is searching for a Hag",
+    "Backstory": "Wisp was interested in the Feywilds and as a Knight he lead a regiment into the Feywilds to make a spearhead ala Heart of Darkness. The ivory! But once inside he lost his arm and his regiment to the Feywild. Stranded, he searched aimlessly until he found what he wasn't looking for (Feywilds, man): the Seelie Court. Nursed back to health, his lost arm was turned into a portkey between the Feywilds and the normal plane. He now can travel between them. He also lost his memory sometime in here but doesn't know about it. ",
+    "persBrief": "Excited. ",
+    "Personality": "Wisp is excited and doesn't really act his age. He still acts like a  young man, even if he's way out of his prime. To all outside observers, he seems lost in time. He's not studious but prefers to take the Walt Whitman approach of experiencing the world and taking meaning from it. But he has two worlds to do this in. ",
+    "Speech": "Wisp ends each sentence with a minor pause as he takes a little while to think and his mind is adrift. He tends to rabble and speak like he's ranting to himself. He might just leave mid conversation. ",
+    "NPCs": "This is up to the DM. What happened to those who were in his past? Those you should consider are his family, his military friends, his military coworkers, taverns he stays at, and why is he no longer famous? ",
+    "FactionType": "The Military",
+    "FactionDesc": "Standard, unless you want to invert this somehow. ",
+    "Stats": "The Wispin\u2019 Arm. Now he wonders the Feywild and the Prime Material, the arm giving him the ability to freely travel between the two worlds. The arm is also able to pass through solid surfaces as long as it isn\u2019t pure iron, and allows Wisp to shoot beams of pure force (2d8) from it, and gives him the strength of a Hill Giant.",
+    "Items": "Half plate and a warpick. ",
+    "Other": "https://www.reddit.com/r/DnDBehindTheScreen/comments/774hpl/8_interesting_npcsplot_hooks/\r\nTaken from this post. Love the NPC and I need some examples for the site. ",
+    "username": "Taming",
+    "comments": [],
+    "__v": 0
+}
+
+{
+    "_id": {
+        "$oid": "5a74992e047da100835eefa0"
+    },
+    "Name": "Marduf Seaeye",
+    "Gender": "Male",
+    "Race": "Human",
+    "Profession": "Pirate / Sorcerer",
+    "Age": "75",
+    "PDesc": "An old human with dark skin, no hair and magic blue eyes. His body is marked with white and blue tattoos, a lot of scars and a lack of teeth",
+    "Location": "He predicts and manipulate the weather, mainly the winds and the rain",
+    "Downtime": "Marduf is from Calimsham lands. He has navigated in the dangerous Chultan Peninsula since his mother joined a pirate group more than 60 years ago. The pirate captain was interested in the magical powers of the young Marduf",
+    "Drive": "He loves to navigate the seas and to teach young mages about the secrets of the water element",
+    "Hook": "He may be found in a random pirate ship in the Chultan Peninsula. He have an intereset in warlocks, mages, druids and mainly sorcerer that have some connection to water. He may show an interest in travel to the te unkown land of Maztica",
+    "Backstory": "He was born an water mage in a land of strong sun and droughts. Some cultists went after him, but his mother escaped with a group of pirates. He had returned to Calimsham as an adult and made himself a famous hero, but returned to the piracy and secrecy",
+    "persBrief": "Calm and misterious",
+    "Personality": "He likes to laugh (showing his lack of teeth). But in general, he's a very silent guy always making some brew or tea. One day he was a very passionated person, and he likes people that have this inner fire",
+    "Speech": "",
+    "NPCs": "",
+    "FactionType": "",
+    "FactionDesc": "",
+    "Stats": "\"The Rainmaker\" and the \"Sea Eyes\"",
+    "Items": "An very old scepter, made with ivory and an sapphire orb. It was given by a siren a lot of years ago",
+    "Other": "",
+    "username": "Guest",
+    "comments": [],
+    "__v": 0
+}
+
+{
+    "_id": {
+        "$oid": "5a76df0a2ab56500873e8f93"
+    },
+    "Name": "Wondering shop / Edward the mimic",
+    "Gender": "none",
+    "Race": "mimic",
+    "Profession": "Wizard",
+    "Age": "40,000",
+    "PDesc": "A large wooden building with a sign that has in white paint \"The wondering shop\" Inside you'll find a man (Just another part of the mimic) selling magic items. The man has an average build brown hair and is rather uninteresting himself.",
+    "Location": "The wondering shop can be anywhere. Normal shopkeeping stuff.",
+    "Downtime": "",
+    "Drive": "",
+    "Hook": "",
+    "Backstory": "Like any other mimic Edward started small. Just a single gold coin but there was a difference. Unlike most Ed was smart. Very smart he had a grasp at magic no other mimic had and lived a pretty good life until he managed to grow so old he could be entire buildings. After that he set up shop finding as many magic items as he can for selling and other such trading.",
+    "persBrief": "Sarcastic",
+    "Personality": "He'll have a lot of sarcasm to him. He'll also come across as kind of rude and dry-humored.",
+    "Speech": "",
+    "NPCs": "",
+    "FactionType": "",
+    "FactionDesc": "",
+    "Stats": "",
+    "Items": "All sorts of magic items. From your clock of billowing to your immovable rod and anything else you could imagine.",
+    "Other": "Great drop of point for an caster npc that was hanging with the party. Ed would totally take a fellow wizard in to keep him company and deal with the annoying adventurer folk that come in.",
+    "username": "the_mighty_one",
+    "comments": [],
+    "__v": 0
+}

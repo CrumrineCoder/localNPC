@@ -15,7 +15,7 @@ function auto_grow(element) {
     app.controller('npcController', function($scope) {
 		// Reset the NPC var
         $scope.NPC = [];
-        var apiUrl = 'https://npclookup.glitch.me/';
+        var apiUrl = 'http://localhost:3000';
         var elems = document.getElementsByClassName('confirmation');
         var confirmIt = function(e) {
             if (!confirm('Are you sure?')) e.preventDefault();
