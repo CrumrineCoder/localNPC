@@ -41,10 +41,10 @@ mongoose.connect('mongodb://' + process.env.HOST + '/' + process.env.NAME, {
 });
 var db = mongoose.connection;
 
-//var users = require('./app/routes/users.js');
-//var NPC = require('./app/routes/NPCs.js'); 
+var users = require('./app/routes/users.js');
+var NPC = require('./app/routes/NPCs.js'); 
 var express = require('express'),
-  //  routes = require('./app/routes/index.js'),
+   routes = require('./app/routes/index.js'),
     mongodb = require('mongodb');
 var MongoClient = mongodb.MongoClient;
 
@@ -104,21 +104,21 @@ app.use(function(req, res, next) {
 });
  
 // Routing
-//app.use('/users', users);
-//app.use('/NPC', NPC); 
+app.use('/users', users);
+app.use('/NPC', NPC); 
 // MongoDB connect 
 
 
-MongoClient.connect(mLab, function(err, db) {
+MongoClient.connect(mLab, function(err, client) {
  
     if (err) {
         throw new Error('Database failed to connect!');
     } else {
         console.log('MongoDB successfully connected on port 27017.');
     }
- 
+	 var db = client.db('mytestingdb')
     //Exports the routes to app and db
-  //  routes(app, db);
+    routes(app, db);
     app.listen(3000, function() {
         console.log('Listening on port 3000...');
     });
