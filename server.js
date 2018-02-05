@@ -41,8 +41,8 @@ mongoose.connect('mongodb://' + process.env.HOST + '/' + process.env.NAME, {
 });
 var db = mongoose.connection;
 
-var users = require('./app/routes/users.js');
-var NPC = require('./app/routes/NPCs.js'); 
+//var users = require('./app/routes/users.js');
+//var NPC = require('./app/routes/NPCs.js'); 
 var express = require('express'),
   //  routes = require('./app/routes/index.js'),
     mongodb = require('mongodb');
@@ -104,8 +104,8 @@ app.use(function(req, res, next) {
 });
  
 // Routing
-app.use('/users', users);
-app.use('/NPC', NPC); 
+//app.use('/users', users);
+//app.use('/NPC', NPC); 
 // MongoDB connect 
 
 
