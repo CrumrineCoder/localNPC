@@ -19,9 +19,7 @@ function ajaxRequest(method, url, callback) {
             callback(xmlhttp.response);
         }
     };
-    xmlhttp.open(method, url, true);
-	console.log(method);
 	console.log(url);
-	console.log(callback);
+    xmlhttp.open(method, url, true);
     xmlhttp.send();
 }

@@ -20,6 +20,6 @@
                 $scope.comments = NPCObject[0].comments;
             });
         }
-        ready(ajaxRequest('GET', apiUrl + "api/NPC/?id=" + page, showNPCs));
+        ready(ajaxRequest('GET', apiUrl + "/api/NPC/?id=" + page, showNPCs));
     });
 })();
