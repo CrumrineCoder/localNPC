@@ -8,7 +8,7 @@ mongoose.connect('mongodb://' + process.env.HOST + '/' + process.env.NAME + "?au
 
 var db = mongoose.connection;
 var npc = db.collection('npcs');
-console.log(db.version());
+
 var NPCSchema = mongoose.Schema({
     Name: {
         type: String,
