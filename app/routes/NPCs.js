@@ -1,5 +1,5 @@
 var express = require('express');
-console.log("NPCs.js");
+
 var router = express.Router();
 var ObjectId = require('mongodb').ObjectID;
 // This file handles routing relation to making and viewing polls
@@ -56,7 +56,6 @@ router.post('/create', function(req, res) {
     } else {
         req.body.username = req.user.username;
         req.body.comments = [];
-		console.log(req.body);
         var newNPC = new NPC(req.body);
         NPC.createNPC(newNPC, function(err, NPC) {
             if (err) throw err;

@@ -1,5 +1,5 @@
 'use strict';
-console.log("profile.client.js");
+
 (function() {
     var app = angular.module('npc', []);
     	// Because handlebar uses {{}}, we have to use {[{}]}
@@ -9,7 +9,7 @@ console.log("profile.client.js");
     });
     app.controller('npcController', function($scope) {
         $scope.NPCs = [];
-        var apiUrl = 'http://localhost:3000';
+        var apiUrl = 'http://localhost:3000/';
         var user;
 
         function getUser(callback) {
@@ -22,7 +22,7 @@ console.log("profile.client.js");
             });
         }
         getUser(function() {
-            ready(ajaxRequest('GET', apiUrl + "/api/listings", showNPCs))
+            ready(ajaxRequest('GET', apiUrl + "api/listings", showNPCs))
         });
 
         function search(nameKey, myArray) {

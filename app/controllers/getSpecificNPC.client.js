@@ -1,5 +1,5 @@
 (function() {
-	console.log("getSpecificNPC.client.js");
+
     var path = window.location.pathname;
     var page = path.split("/").pop();
     var angularApp = angular.module('npc', []);
@@ -10,7 +10,7 @@
     });
     angularApp.controller('npcController', function($scope) {
         $scope.NPC = [];
-        var apiUrl = 'http://localhost:3000';
+        var apiUrl = 'http://localhost:3000/';
 
         function showNPCs(data) {
             var NPCObject = JSON.parse(data);
@@ -20,6 +20,6 @@
                 $scope.comments = NPCObject[0].comments;
             });
         }
-        ready(ajaxRequest('GET', apiUrl + "/api/NPC/?id=" + page, showNPCs));
+        ready(ajaxRequest('GET', apiUrl + "api/NPC/?id=" + page, showNPCs));
     });
 })();

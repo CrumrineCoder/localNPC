@@ -1,5 +1,4 @@
 // This file handles the backend for the NPC mongoose schema
-console.log("NPC.js");
 var mongoose = require('mongoose');
 //mongoose.set('debug', true);
 var bcrypt = require('bcryptjs');
@@ -42,7 +41,6 @@ module.exports.delete = function(newNPC, callback) {
     });
 }
 module.exports.createNPC = function(newNPC, callback) {
-	console.log("Create new NPC");
-	console.log(newNPC);
+
     newNPC.save(callback);
 }

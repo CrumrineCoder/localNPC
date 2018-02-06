@@ -1,5 +1,5 @@
 // Textarea auto grows 
-console.log("editNPC.client.js");
+
 function auto_grow(element) {
     element.style.height = "5px";
     element.style.height = (element.scrollHeight) + "px";
@@ -16,7 +16,7 @@ function auto_grow(element) {
     app.controller('npcController', function($scope) {
 		// Reset the NPC var
         $scope.NPC = [];
-        var apiUrl = 'http://localhost:3000';
+        var apiUrl = 'http://localhost:3000/';
         var elems = document.getElementsByClassName('confirmation');
         var confirmIt = function(e) {
             if (!confirm('Are you sure?')) e.preventDefault();
@@ -33,6 +33,6 @@ function auto_grow(element) {
                 });
             }
         }
-        ready(ajaxRequest('GET', apiUrl + "/api/NPC/?id=" + page, showNPCs));
+        ready(ajaxRequest('GET', apiUrl + "api/NPC/?id=" + page, showNPCs));
     });
 })();

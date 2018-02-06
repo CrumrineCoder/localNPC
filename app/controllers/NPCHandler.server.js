@@ -1,12 +1,11 @@
 'use strict';
-console.log("NPCHandler.server.js");
+
 var ObjectId = require('mongodb').ObjectID;
 // This file gets the polls collection data from the db and handles adding votes to the database
 function NPCHandler(db) {
     var npc = db.collection('npcs');
     // Get all NPCs
     this.getAllNPCs = function(req, res) {
-		console.log("HEYHEYHEY");
         npc.find({}, {
             __v: 0
         }).toArray(function(err, documents) {
@@ -25,7 +24,6 @@ function NPCHandler(db) {
     }
     // Outdated function: search for NPCs based on text. 
     this.Search = function(req, res) {
-        console.log(req.body);
         npc.find({
             $text: {
                 $search: req.body.npcName

@@ -155,13 +155,16 @@ hr{
     height: 32px;
     border-radius: 1px; 
   }
-  #tip{
+  .tip{
     display: block; 
   }
   #greenButton, #delete{
     width: 100%;
   }
   #labelNPCname{
+    display: block;
+  }
+  ul{
     display: block;
   }
 }
@@ -177,9 +180,7 @@ hr{
   h2{
     width: 100%;
   }
-  ul{
-    display: block;
-  }
+  
     .pull-right{
     font-size: 13px;
   }

@@ -1,11 +1,11 @@
 'use strict'
-console.log("creatingNPCs.client.js");
+
 function auto_grow(element) {
     element.style.height = "5px";
     element.style.height = (element.scrollHeight) + "px";
 }
 (function() {
-    var apiUrl = 'http://localhost:3000';
+    var apiUrl = 'http://localhost:3000/';
     // Remove duplicates from an array
     function uniq(a) {
         var seen = {};
@@ -62,5 +62,5 @@ function auto_grow(element) {
             FactionList.appendChild(option);
         });
     }
-    ready(ajaxRequest('GET', apiUrl + "/api/listings", showNPCs));
+    ready(ajaxRequest('GET', apiUrl + "api/listings", showNPCs));
 })();
