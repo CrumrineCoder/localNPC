@@ -22,7 +22,7 @@ console.log("profile.client.js");
             });
         }
         getUser(function() {
-            ready(ajaxRequest('GET', apiUrl + "api/listings", showNPCs))
+            ready(ajaxRequest('GET', apiUrl + "/api/listings", showNPCs))
         });
 
         function search(nameKey, myArray) {

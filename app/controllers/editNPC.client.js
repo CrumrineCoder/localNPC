@@ -33,6 +33,6 @@ function auto_grow(element) {
                 });
             }
         }
-        ready(ajaxRequest('GET', apiUrl + "api/NPC/?id=" + page, showNPCs));
+        ready(ajaxRequest('GET', apiUrl + "/api/NPC/?id=" + page, showNPCs));
     });
 })();

@@ -62,5 +62,5 @@ function auto_grow(element) {
             FactionList.appendChild(option);
         });
     }
-    ready(ajaxRequest('GET', apiUrl + "api/listings", showNPCs));
+    ready(ajaxRequest('GET', apiUrl + "/api/listings", showNPCs));
 })();

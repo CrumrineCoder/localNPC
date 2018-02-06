@@ -29,7 +29,7 @@ npc.createIndex({
 */
 
 // The below line is causing problems. It may not be needed.
-// var NPC = module.exports = mongoose.model('NPC', NPCSchema);
+ var NPC = module.exports = mongoose.model('NPC', NPCSchema);
 
 module.exports.replace = function(newNPC, callback) {
     npc.update({
@@ -42,5 +42,7 @@ module.exports.delete = function(newNPC, callback) {
     });
 }
 module.exports.createNPC = function(newNPC, callback) {
+	console.log("Create new NPC");
+	console.log(newNPC);
     newNPC.save(callback);
 }

@@ -56,6 +56,7 @@ router.post('/create', function(req, res) {
     } else {
         req.body.username = req.user.username;
         req.body.comments = [];
+		console.log(req.body);
         var newNPC = new NPC(req.body);
         NPC.createNPC(newNPC, function(err, NPC) {
             if (err) throw err;
